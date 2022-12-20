@@ -23,15 +23,20 @@
     pkgs.zsh
   ];
 
+  enterShell = ''
+    pci
+  '';
+
+
   # https://devenv.sh/languages/
   #languages.nix.enable = true;
   languages.python.enable = true;
 
   # https://devenv.sh/scripts/
-  # scripts.pc.exec = "pre-commit"
+  scripts.pci.exec = ''pre-commit install --install-hooks'';
+  scripts.pca.exec = ''pre-commit autoupdate'';
 
 
   # https://devenv.sh/processes/
   processes.docker-compose.exec = "docker-compose up -d";
-  processes.pre-commit.exec = "pre-commit install --install-hooks";
 }
