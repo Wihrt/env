@@ -3,6 +3,8 @@
 {
   # https://devenv.sh/basics/
   env.GREET = "toto";
+  env.NIXPKGS_ALLOW_UNFREE = "1";
+
 
   # https://devenv.sh/packages/
   packages = [
