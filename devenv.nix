@@ -2,8 +2,7 @@
 
 {
   # https://devenv.sh/basics/
-  env.GREET = "toto";
-  env.NIXPKGS_ALLOW_UNFREE = "1";
+  # env.GREET = "toto"
 
 
   # https://devenv.sh/packages/
@@ -27,7 +26,6 @@
     pci
   '';
 
-
   # https://devenv.sh/languages/
   #languages.nix.enable = true;
   languages.python.enable = true;
@@ -35,7 +33,6 @@
   # https://devenv.sh/scripts/
   scripts.pci.exec = ''pre-commit install --install-hooks'';
   scripts.pca.exec = ''pre-commit autoupdate'';
-
 
   # https://devenv.sh/processes/
   processes.docker-compose.exec = "docker-compose up -d";
