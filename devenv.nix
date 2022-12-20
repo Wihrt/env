@@ -5,7 +5,7 @@
   env.GREET = "toto";
 
   # https://devenv.sh/packages/
-  packages = [ 
+  packages = [
     pkgs.docker
     pkgs.docker-client
     pkgs.docker-compose
@@ -33,4 +33,3 @@
   processes.docker-compose.exec = "docker-compose up -d";
   processes.pre-commit.exec = "pre-commit install --install-hooks";
 }
-
