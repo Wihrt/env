@@ -69,6 +69,22 @@
         "type": "github"
       }
     },
+    "my-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1672244120,
+        "narHash": "sha256-H+X+lpi1AcUZNXnQNuUsqT5AN9NgPTfnAemTpQl+Wx4=",
+        "ref": "refs/heads/main",
+        "rev": "3c4dbf010d188061a167c6b2c7707d54a8940e51",
+        "revCount": 2,
+        "type": "git",
+        "url": "ssh://git@gitlab.com/Wihrt/envtest.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@gitlab.com/Wihrt/envtest.git"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1671458120,
@@ -128,6 +144,7 @@
     "root": {
       "inputs": {
         "devenv": "devenv",
+        "my-config": "my-config",
         "nixpkgs": "nixpkgs",
         "pre-commit-hooks": "pre-commit-hooks"
       }

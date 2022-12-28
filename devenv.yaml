@@ -1,3 +1,8 @@
 inputs:
   nixpkgs:
     url: github:NixOS/nixpkgs/nixpkgs-unstable
+  my-config:
+    url: git+ssh://git@gitlab.com/Wihrt/envtest.git
+    flake: false
+imports:
+  - my-config
